@@ -1,0 +1,14 @@
+#include <stdio.h>
+struct s 
+{
+char ch;
+float f;
+char c;
+short int s;
+} __attribute__((packed));
+
+int main()
+{
+	struct s pack;
+	printf("Size of pack is: %ld\n", sizeof(pack));
+}
